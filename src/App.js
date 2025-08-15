@@ -1,26 +1,38 @@
-
-function Button(props){
+const Cat = () => {
   return (
-    <button className={props.className}>
-      {props.text}
-    </button>
+    <div className="p-2 border-2 rounded-lg border-amber-400">
+      <i className="fa-solid fa-cat text-7xl text-amber-400" />
+    </div>
   );
-}
-
+};
 function App() {
   return (
     <div>
-      <Button text="fijrst" className = "border-2 border-green-600 text-green-400 px-8 py-2 m-4 rounded-md" />
-      <a href="https://www.google.com/" target='_blank'>
-        <Button text="second" className="text-white px-10 py-4 m-4 bg-sky-400 rounded-lg" />
-      </a>
-      <Button text="third" className="bg-violet-100 text-purple-600 rounded-full m-4 px-6 py-2" />
-      <Button text = "fourth" className="bg-cyan-800 text-cyan-200 p-10 rounded-lg m-2 hover:bg-cyan-200 hover:text-cyan-800" />
-
-      <div className = {`${true? 'bg-red-500': 'bg-orange-400'} text-white`}>
-        what should i write
-      </div>  
-
+      <div className="flex justify-center items-center h-64 p-4 m-4 border-2 border-blue-400">
+        <Cat />
+        <Cat />
+        <Cat />
+      </div>
+      <div className="flex justify-between h-64 p-4 m-4 border-2 border-red-400">
+        <Cat />
+        <Cat />
+        <Cat />
+      </div>
+      <div className="flex justify-center h-64 p-4 m-4 border-2 border-green-400">
+        <Cat />
+        <Cat />
+        <Cat />
+      </div>
+      <div className="flex justify-around items-end h-64 p-4 m-4 border-2 border-purple-400">
+        <Cat />
+        <Cat />
+        <Cat />
+      </div>
+      <div className="flex justify-around items-center h-64 p-4 m-4 border-2 border-orange-400">
+        <Cat />
+        <Cat />
+        <Cat />
+      </div>
     </div>
   );
 }
